@@ -1,0 +1,35 @@
+{
+  "name": "htmx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "processcss": "npx tailwindcss -i ./src/global.css -o ./public/styles.css --minify",
+    "processcss:dev": "npx tailwindcss -i ./src/global.css -o ./public/styles.css",
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "liquidjs": "^10.10.0",
+    "sequelize": "^6.37.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^3.0.3",
+    "tailwindcss": "^3.4.1"
+  },
+  "nodemonConfig": {
+    "ext": "js,json,liquid,html"
+  }
+}
