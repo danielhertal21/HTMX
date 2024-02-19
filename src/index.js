@@ -13,7 +13,7 @@ import connectLiveReload from "connect-livereload";
 
 import { execSync } from "child_process";
 
-execSync("npm run processcss:dev");
+//execSync("npm run processcss:dev");
 
 const liveReloadServer = livereload.createServer();
 liveReloadServer.server.once("connection", () => {

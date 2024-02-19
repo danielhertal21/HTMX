@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node ./src/index.js",
     "processcss": "npx tailwindcss -i ./src/global.css -o ./public/styles.css --minify",
-    "processcss:dev": "npx tailwindcss -i ./src/global.css -o ./public/styles.css",
+    "processcss:dev": "npx tailwindcss -i ./src/global.css -o ./public/styles.css --watch",
     "dev": "nodemon ./src/index.js"
   },
   "keywords": [],
